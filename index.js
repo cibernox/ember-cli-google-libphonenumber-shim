@@ -8,9 +8,6 @@ const libphonenumberPath = path.dirname(require.resolve('google-libphonenumber/p
 
 module.exports = {
   name: 'ember-cli-google-libphonenumber-shim',
-  isDevelopingAddon() {
-    return true;
-  },
 
   treeForVendor(tree) {
     let libPhoneNumberTree = new Funnel(libphonenumberPath, {
